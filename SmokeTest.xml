@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SmokeSuites">
+  
+
+  
+   <test thread-count="5" name="SmokeTest">
+	   <groups>
+		   
+		   <define name = "all" >
+			    <exclude name = "smokeTest" />
+		   		<include name = "funcTest" />
+		   </define>
+		   	
+		   <run>
+		   		<include name = "all" />
+		   </run>
+	   </groups>
+	   
+    <classes>
+      <class name="LearningTestNG.testing_Annotations"/>
+      <class name="LearningTestNG.GroupTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+
+</suite> <!-- Suite -->
