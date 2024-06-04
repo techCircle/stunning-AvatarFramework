@@ -13,6 +13,10 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 public class BaseClass {
 
@@ -78,5 +82,27 @@ public class BaseClass {
 	public static String getProperty(String key) {
 		return prop.getProperty(key);
 	}
+	
+//	
+//	@BeforeSuite(alwaysRun=true)
+//	public void BeforeSuite() {
+//		 System.out.println("Before Suite");
+//	}
+//
+//	@BeforeTest
+//	public void BeforeTest() {
+//		System.out.println("Before Test");
+//	}
+//	
+//	@BeforeClass
+//	public void BeforeClass() {
+//		System.out.println("Before Class");
+//	}
+//	
+//	@BeforeMethod
+//	public void BeforeMethod() {
+//		System.out.println("Before Method");
+//	}
+	
 
 }

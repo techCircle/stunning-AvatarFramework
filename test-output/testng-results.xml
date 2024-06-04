@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-30T20:07:58 EDT" name="Default suite" finished-at="2024-05-30T20:08:05 EDT" duration-ms="6493">
+  <suite started-at="2024-06-03T21:48:52 EDT" name="Suite" finished-at="2024-06-03T21:48:52 EDT" duration-ms="45">
     <groups>
     </groups>
-    <test started-at="2024-05-30T20:07:58 EDT" name="Default test" finished-at="2024-05-30T20:08:05 EDT" duration-ms="6493">
-      <class name="TestCases.basicTesting">
-        <test-method signature="test1()[pri:0, instance:TestCases.basicTesting@543588e6]" started-at="2024-05-30T20:07:59 EDT" name="test1" finished-at="2024-05-30T20:08:05 EDT" duration-ms="6305" status="PASS">
+    <test started-at="2024-06-03T21:48:52 EDT" name="Test" finished-at="2024-06-03T21:48:52 EDT" duration-ms="45">
+      <class name="LearningTestNG.ParameterizedTest">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:LearningTestNG.ParameterizedTest@24fcf36f]" started-at="2024-06-03T21:48:52 EDT" name="login" finished-at="2024-06-03T21:48:52 EDT" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abcUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passUser]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- TestCases.basicTesting -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- login -->
+        <test-method signature="loginAdmin(java.lang.String,java.lang.String)[pri:0, instance:LearningTestNG.ParameterizedTest@24fcf36f]" started-at="2024-06-03T21:48:52 EDT" name="loginAdmin" finished-at="2024-06-03T21:48:52 EDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adminUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[adminUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAdmin -->
+      </class> <!-- LearningTestNG.ParameterizedTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
