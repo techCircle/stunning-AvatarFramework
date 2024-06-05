@@ -11,7 +11,6 @@ public class ParameterizedTest {
 	public void login(String username, String password) {
 		System.out.println(username);
 		System.out.println(password);
-
 	}
 	
 	@Test

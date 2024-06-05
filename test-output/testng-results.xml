@@ -1,45 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-03T21:48:52 EDT" name="Suite" finished-at="2024-06-03T21:48:52 EDT" duration-ms="45">
+  <suite started-at="2024-06-04T19:51:42 EDT" name="Default suite" finished-at="2024-06-04T19:51:42 EDT" duration-ms="96">
     <groups>
     </groups>
-    <test started-at="2024-06-03T21:48:52 EDT" name="Test" finished-at="2024-06-03T21:48:52 EDT" duration-ms="45">
-      <class name="LearningTestNG.ParameterizedTest">
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:LearningTestNG.ParameterizedTest@24fcf36f]" started-at="2024-06-03T21:48:52 EDT" name="login" finished-at="2024-06-03T21:48:52 EDT" duration-ms="9" status="PASS">
+    <test started-at="2024-06-04T19:51:42 EDT" name="Default test" finished-at="2024-06-04T19:51:42 EDT" duration-ms="96">
+      <class name="LearningTestNG.dataProviderTesting">
+        <test-method signature="FirstNames(java.lang.String,java.lang.String)[pri:0, instance:LearningTestNG.dataProviderTesting@10d307f1]" started-at="2024-06-04T19:51:42 EDT" name="FirstNames" data-provider="EuropeanNames" finished-at="2024-06-04T19:51:42 EDT" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[abcUser]]>
+                <![CDATA[name]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[passUser]]>
+                <![CDATA[King James]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="loginAdmin(java.lang.String,java.lang.String)[pri:0, instance:LearningTestNG.ParameterizedTest@24fcf36f]" started-at="2024-06-03T21:48:52 EDT" name="loginAdmin" finished-at="2024-06-03T21:48:52 EDT" duration-ms="2" status="PASS">
+        </test-method> <!-- FirstNames -->
+        <test-method signature="FirstNames(java.lang.String,java.lang.String)[pri:0, instance:LearningTestNG.dataProviderTesting@10d307f1]" started-at="2024-06-04T19:51:42 EDT" name="FirstNames" data-provider="EuropeanNames" finished-at="2024-06-04T19:51:42 EDT" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[adminUser]]>
+                <![CDATA[name]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[adminUser]]>
+                <![CDATA[Rodrygo]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAdmin -->
-      </class> <!-- LearningTestNG.ParameterizedTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- FirstNames -->
+        <test-method signature="FirstNames(java.lang.String,java.lang.String)[pri:0, instance:LearningTestNG.dataProviderTesting@10d307f1]" started-at="2024-06-04T19:51:42 EDT" name="FirstNames" data-provider="EuropeanNames" finished-at="2024-06-04T19:51:42 EDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lastName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kylian]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FirstNames -->
+        <test-method signature="FirstNames(java.lang.String,java.lang.String)[pri:0, instance:LearningTestNG.dataProviderTesting@10d307f1]" started-at="2024-06-04T19:51:42 EDT" name="FirstNames" data-provider="EuropeanNames" finished-at="2024-06-04T19:51:42 EDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lastName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ronaldo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FirstNames -->
+        <test-method signature="FirstNames(java.lang.String,java.lang.String)[pri:0, instance:LearningTestNG.dataProviderTesting@10d307f1]" started-at="2024-06-04T19:51:42 EDT" name="FirstNames" data-provider="EuropeanNames" finished-at="2024-06-04T19:51:42 EDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Messi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FirstNames -->
+        <test-method signature="myBio(java.lang.String,java.lang.String,int)[pri:0, instance:LearningTestNG.dataProviderTesting@10d307f1]" started-at="2024-06-04T19:51:42 EDT" name="myBio" data-provider="myBio" finished-at="2024-06-04T19:51:42 EDT" duration-ms="23" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[King James]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[33]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myBio -->
+        <test-method signature="myBio(java.lang.String,java.lang.String,int)[pri:0, instance:LearningTestNG.dataProviderTesting@10d307f1]" started-at="2024-06-04T19:51:42 EDT" name="myBio" data-provider="myBio" finished-at="2024-06-04T19:51:42 EDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rodrygo]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[44]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myBio -->
+        <test-method signature="myBio(java.lang.String,java.lang.String,int)[pri:0, instance:LearningTestNG.dataProviderTesting@10d307f1]" started-at="2024-06-04T19:51:42 EDT" name="myBio" data-provider="myBio" finished-at="2024-06-04T19:51:42 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lastName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kylian]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myBio -->
+        <test-method signature="myBio(java.lang.String,java.lang.String,int)[pri:0, instance:LearningTestNG.dataProviderTesting@10d307f1]" started-at="2024-06-04T19:51:42 EDT" name="myBio" data-provider="myBio" finished-at="2024-06-04T19:51:42 EDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lastName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ronaldo]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[39]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myBio -->
+        <test-method signature="myBio(java.lang.String,java.lang.String,int)[pri:0, instance:LearningTestNG.dataProviderTesting@10d307f1]" started-at="2024-06-04T19:51:42 EDT" name="myBio" data-provider="myBio" finished-at="2024-06-04T19:51:42 EDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Messi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[36]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myBio -->
+      </class> <!-- LearningTestNG.dataProviderTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
