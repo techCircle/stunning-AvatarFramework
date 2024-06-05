@@ -56,6 +56,19 @@ public class BaseClass {
 
 		return driver;
 	}
+	
+	
+	public static void tearDown() {
+		if(driver != null) {
+			driver.close();
+			driver = null;
+		}
+		
+	}
+	
+	
+	
+	
 
 	public static Properties prop; // declared the properties object.. the value of this prop at this line is NULL
 
