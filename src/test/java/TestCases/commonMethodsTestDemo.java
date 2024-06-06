@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import com.github.javafaker.Faker;
+
 import Utilities.BaseClass;
 import Utilities.commonMethods;
 
@@ -34,6 +36,15 @@ public class commonMethodsTestDemo {
 		//////////////////////////////////////////////////////////////////////////////		
 
 		
+		 //using window handle method
+		
+		//first click and open the window link
+		
+		commonMethods.switchToChildWindow(BaseClass.getDriver().getWindowHandle());
+		
+		commonMethods.click(loginInputBox);
+		commonMethods.sendKeys("Address Name", loginInputBox);
+		
 		
 		
 		
@@ -49,10 +60,30 @@ public class commonMethodsTestDemo {
 	
 	
 	
+	public static void main(String[] args) {
+		
+		String beerName = commonMethods.generateBeer();
+		String address = commonMethods.generateAddress();
+		String email = commonMethods.generateEmail();
+		
+		System.out.println(beerName);
+		System.out.println(address);
+		System.out.println(email);
+		
+		commonMethods.takeScreenShot();
+
+		
+		
+
+	}
 	
 	
-	
-	
+	/*
+	 * 59739
+		Schmeler Cliff
+		Inesberg
+		Venezuela
+	 */
 	
 	
 	
