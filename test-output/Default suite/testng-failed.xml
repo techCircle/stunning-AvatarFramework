@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LearningTestNG.TestParallel">
+      <class name="TestCases.TestCasesForProject">
         <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="method2"/>
+          <include name="getDriver"/>
+          <include name="verifyUserIsActive"/>
         </methods>
-      </class> <!-- LearningTestNG.TestParallel -->
+      </class> <!-- TestCases.TestCasesForProject -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

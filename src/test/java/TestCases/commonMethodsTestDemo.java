@@ -10,8 +10,11 @@ import com.github.javafaker.Faker;
 
 import Utilities.BaseClass;
 import Utilities.commonMethods;
+import pages.PIMPage;
 
-public class commonMethodsTestDemo {
+public class commonMethodsTestDemo extends commonMethods {
+	
+
 
 	@Test
 	public void demo() {

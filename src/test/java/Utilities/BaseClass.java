@@ -52,22 +52,23 @@ public class BaseClass {
 			}
 			driver.get(BaseClass.getProperty("url"));
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constants.implicitWaitTime));
+			PageInitializer.initialize();
 			lp = new LoginPage();
 			lp.LoginToApp();
 		}
 		return driver;
 	}
 	
-	@AfterMethod(alwaysRun=true)
-	public static void tearDown() {
-		if(driver != null) {
-			driver.close();
-			driver = null;
-		}
-		
-	}
-	
+//	@AfterMethod(alwaysRun=true)
+//	public static void tearDown() {
+//		if(driver != null) {
+//			driver.close();
+//			driver = null;
+//		}
+//		
+//	}
+//	
 	
 	
 	
@@ -78,7 +79,7 @@ public class BaseClass {
 		try {
 			// what file to read
 			// read the file into java, and finds the file using
-			String filePath = "src/test/resources/propertiesFiles/configuration.properties";
+			String filePath = Constants.configPropFilePath;
 
 			FileInputStream fis = new FileInputStream(filePath);
 

@@ -26,7 +26,7 @@ import com.github.javafaker.Faker;
 import com.github.javafaker.service.FakeValuesService;
 import com.github.javafaker.service.RandomService;
 
-public class commonMethods {
+public class commonMethods extends PageInitializer {
 
 	public static void sendKeys(WebElement element, String text) {
 		element.clear();
@@ -227,7 +227,7 @@ public class commonMethods {
 	}
 
 	public static WebDriverWait getWaitObject() {
-		WebDriverWait wait = new WebDriverWait(BaseClass.getDriver(), Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(BaseClass.getDriver(), Duration.ofSeconds(Constants.explicitWaitTime));
 		return wait;
 	}
 
