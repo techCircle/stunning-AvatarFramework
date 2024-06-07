@@ -13,15 +13,17 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
+
+import pages.LoginPage;
 
 public class BaseClass {
 
 	public static WebDriver driver; // declaring webdriver at class level
+	public static LoginPage lp; 
 
+	@BeforeMethod(alwaysRun=true)
 	public static WebDriver getDriver() {
 		if (driver == null) {
 			switch (BaseClass.getProperty("browser")) {
@@ -47,17 +49,17 @@ public class BaseClass {
 				chromeOptions.addArguments("--incognito");
 				driver = new ChromeDriver(chromeOptions);
 				break;
-
 			}
 			driver.get(BaseClass.getProperty("url"));
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+			lp = new LoginPage();
+			lp.LoginToApp();
 		}
-
 		return driver;
 	}
 	
-	
+	@AfterMethod(alwaysRun=true)
 	public static void tearDown() {
 		if(driver != null) {
 			driver.close();
