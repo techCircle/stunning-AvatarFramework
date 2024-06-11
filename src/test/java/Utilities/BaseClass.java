@@ -22,6 +22,8 @@ public class BaseClass {
 
 	public static WebDriver driver; // declaring webdriver at class level
 	public static LoginPage lp; 
+	
+	//singleton
 
 	@BeforeMethod(alwaysRun=true)
 	public static WebDriver getDriver() {
@@ -50,12 +52,12 @@ public class BaseClass {
 				driver = new ChromeDriver(chromeOptions);
 				break;
 			}
-			driver.get(BaseClass.getProperty("url"));
+			driver.get(BaseClass.getProperty("automationURl"));
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constants.implicitWaitTime));
 			PageInitializer.initialize();
-			lp = new LoginPage();
-			lp.LoginToApp();
+//			lp = new LoginPage();
+//			lp.LoginToApp();
 		}
 		return driver;
 	}

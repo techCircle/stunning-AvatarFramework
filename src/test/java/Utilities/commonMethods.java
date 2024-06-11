@@ -242,6 +242,10 @@ public class commonMethods extends PageInitializer {
 	public static void click(WebElement element) {
 		waitForClickability(element).click();
 	}
+	
+	public static String getText(WebElement element) {
+		return waitForVisibility(element).getText();
+	}
 
 	public static void sendKeys(String keys, WebElement element) {
 		waitForVisibility(element).sendKeys(keys);
