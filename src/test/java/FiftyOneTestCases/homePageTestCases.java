@@ -1,6 +1,7 @@
 package FiftyOneTestCases;
 
-import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,14 +13,14 @@ public class homePageTestCases extends commonMethods {
 	public void homePageWithThreeSlidersOnly() {
 		hP.clickOnNavOption("Shop");
 		commonMethods.click(sP.homeButton);
-		Assert.assertTrue(hP.sliders.size() == 3);
+		AssertJUnit.assertTrue(hP.sliders.size() == 3);
 	}
 
 	@Test
 	public void homePageWithThreeArrivalsOnly() {
 		hP.clickOnNavOption("Shop");
 		commonMethods.click(sP.homeButton);
-		Assert.assertTrue(hP.arrivals.size() == 3);
+		AssertJUnit.assertTrue(hP.arrivals.size() == 3);
 	}
 
 	@Test
@@ -27,11 +28,13 @@ public class homePageTestCases extends commonMethods {
 		
 		hP.clickOnNavOption("Shop");
 		commonMethods.click(sP.homeButton);
-		Assert.assertTrue(hP.arrivals.size() == 3);
+		AssertJUnit.assertTrue(hP.arrivals.size() == 3);
 		commonMethods.click(hP.firstArrival);
 		commonMethods.click(pP.addToBasketButton);		
-		Assert.assertTrue(commonMethods.getText(pP.viewBasketMessage).contains("has been added to your basket"));
+		AssertJUnit.assertTrue(commonMethods.getText(pP.viewBasketMessage).contains("has been added to your basket"));
 
 	}
+	
+	//3 out of 18
 
 }

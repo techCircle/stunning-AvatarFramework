@@ -15,4 +15,13 @@ public class Constants {
 	public static String excelPath = "";
 	
 	
+	
+	
+	
+	
+	//user constants values
+	
+	public static String invalidCredErroMessage = "is not registered on this site. If you are unsure of your username, try your email address instead";
+	
+	
 }

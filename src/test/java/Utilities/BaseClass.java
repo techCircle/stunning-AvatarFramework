@@ -62,15 +62,15 @@ public class BaseClass {
 		return driver;
 	}
 	
-//	@AfterMethod(alwaysRun=true)
-//	public static void tearDown() {
-//		if(driver != null) {
-//			driver.close();
-//			driver = null;
-//		}
-//		
-//	}
-//	
+	@AfterMethod(alwaysRun=true)
+	public static void tearDown() {
+		if(driver != null) {
+			driver.close();
+			driver = null;
+		}
+		
+	}
+	
 	
 	
 	
