@@ -1,13 +1,15 @@
 package FiftyOneTestCases;
 
-import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import Utilities.BaseClass;
+import Utilities.ListenersNG;
 import Utilities.commonMethods;
 
+
+@Listeners(ListenersNG.class)
 public class myAccountTestCases extends commonMethods {
 	
 	

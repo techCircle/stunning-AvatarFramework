@@ -1,13 +1,18 @@
 package Utilities;
 
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Base64;
 import java.util.List;
 import java.util.Locale;
 import java.util.Set;
+
+import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
@@ -314,6 +319,44 @@ public class commonMethods extends PageInitializer {
 			e.printStackTrace();
 		}
 
+	}
+	
+	
+	public static String takeScreenShot64() {
+	    TakesScreenshot takesScreenshot = (TakesScreenshot) BaseClass.getDriver();
+	    String base64code = takesScreenshot.getScreenshotAs(OutputType.BASE64);
+
+	    ByteArrayInputStream bis = null;
+	    try {
+	        // Convert Base64 string to byte array
+	        byte[] decodedBytes = Base64.getDecoder().decode(base64code);
+	        bis = new ByteArrayInputStream(decodedBytes);
+	        BufferedImage image = ImageIO.read(bis);
+
+	        // Generate a timestamp-based file name
+	        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss"));
+	        String filePath = "src/test/resources/htmlReport/screenshot_" + timestamp + ".png";
+
+	        // Ensure the directory exists
+	        File outputFile = new File(filePath);
+	        outputFile.getParentFile().mkdirs();
+
+	        // Save the screenshot to the specified path
+	        ImageIO.write(image, "png", outputFile);
+
+	    } catch (IOException e) {
+	        System.err.println("Error while saving screenshot: " + e.getMessage());
+	    } finally {
+	        if (bis != null) {
+	            try {
+	                bis.close();
+	            } catch (IOException e) {
+	                System.err.println("Error while closing ByteArrayInputStream: " + e.getMessage());
+	            }
+	        }
+	    }
+
+	    return base64code;
 	}
 
 }

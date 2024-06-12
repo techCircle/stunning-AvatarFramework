@@ -1,113 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-10T21:43:56 EDT" name="Suite" finished-at="2024-06-10T21:45:11 EDT" duration-ms="74933">
+  <suite started-at="2024-06-11T21:32:49 EDT" name="Suite" finished-at="2024-06-11T21:34:08 EDT" duration-ms="79223">
     <groups>
     </groups>
-    <test started-at="2024-06-10T21:43:56 EDT" name="Test" finished-at="2024-06-10T21:45:11 EDT" duration-ms="74933">
+    <test started-at="2024-06-11T21:32:49 EDT" name="Test" finished-at="2024-06-11T21:34:08 EDT" duration-ms="79223">
       <class name="FiftyOneTestCases.myAccountRegistrationTestCases">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.myAccountRegistrationTestCases@2b91004a]" started-at="2024-06-10T21:44:04 EDT" name="getDriver" finished-at="2024-06-10T21:44:10 EDT" duration-ms="6133" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.myAccountRegistrationTestCases@5acf93bb]" started-at="2024-06-11T21:32:59 EDT" name="getDriver" finished-at="2024-06-11T21:33:06 EDT" duration-ms="6466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="RegistrationSignIn()[pri:0, instance:FiftyOneTestCases.myAccountRegistrationTestCases@2b91004a]" started-at="2024-06-10T21:44:10 EDT" name="RegistrationSignIn" finished-at="2024-06-10T21:44:10 EDT" duration-ms="23" status="PASS">
+        <test-method signature="RegistrationSignIn()[pri:0, instance:FiftyOneTestCases.myAccountRegistrationTestCases@5acf93bb]" started-at="2024-06-11T21:33:06 EDT" name="RegistrationSignIn" finished-at="2024-06-11T21:33:06 EDT" duration-ms="25" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at FiftyOneTestCases.myAccountRegistrationTestCases.RegistrationSignIn(myAccountRegistrationTestCases.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegistrationSignIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.myAccountRegistrationTestCases@2b91004a]" started-at="2024-06-10T21:44:10 EDT" name="tearDown" finished-at="2024-06-10T21:44:11 EDT" duration-ms="246" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.myAccountRegistrationTestCases@5acf93bb]" started-at="2024-06-11T21:33:07 EDT" name="tearDown" finished-at="2024-06-11T21:33:07 EDT" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- FiftyOneTestCases.myAccountRegistrationTestCases -->
       <class name="FiftyOneTestCases.myAccountLoginTestCases">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.myAccountLoginTestCases@7205765b]" started-at="2024-06-10T21:44:52 EDT" name="getDriver" finished-at="2024-06-10T21:44:58 EDT" duration-ms="5699" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.myAccountLoginTestCases@66d3eec0]" started-at="2024-06-11T21:33:49 EDT" name="getDriver" finished-at="2024-06-11T21:33:55 EDT" duration-ms="5600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="LogInWithWalidUsernameAndPassword()[pri:0, instance:FiftyOneTestCases.myAccountLoginTestCases@7205765b]" started-at="2024-06-10T21:44:58 EDT" name="LogInWithWalidUsernameAndPassword" finished-at="2024-06-10T21:45:01 EDT" duration-ms="3494" status="PASS">
+        <test-method signature="LogInWithWalidUsernameAndPassword()[pri:0, instance:FiftyOneTestCases.myAccountLoginTestCases@66d3eec0]" started-at="2024-06-11T21:33:55 EDT" name="LogInWithWalidUsernameAndPassword" finished-at="2024-06-11T21:33:58 EDT" duration-ms="3528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogInWithWalidUsernameAndPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.myAccountLoginTestCases@7205765b]" started-at="2024-06-10T21:45:01 EDT" name="tearDown" finished-at="2024-06-10T21:45:01 EDT" duration-ms="244" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.myAccountLoginTestCases@66d3eec0]" started-at="2024-06-11T21:33:58 EDT" name="tearDown" finished-at="2024-06-11T21:33:59 EDT" duration-ms="237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.myAccountLoginTestCases@7205765b]" started-at="2024-06-10T21:45:01 EDT" name="getDriver" finished-at="2024-06-10T21:45:07 EDT" duration-ms="5496" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.myAccountLoginTestCases@66d3eec0]" started-at="2024-06-11T21:33:59 EDT" name="getDriver" finished-at="2024-06-11T21:34:05 EDT" duration-ms="5878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="logInWithIncorrectUsernameIncorrectPassword()[pri:0, instance:FiftyOneTestCases.myAccountLoginTestCases@7205765b]" started-at="2024-06-10T21:45:07 EDT" name="logInWithIncorrectUsernameIncorrectPassword" finished-at="2024-06-10T21:45:11 EDT" duration-ms="3840" status="PASS">
+        <test-method signature="logInWithIncorrectUsernameIncorrectPassword()[pri:0, instance:FiftyOneTestCases.myAccountLoginTestCases@66d3eec0]" started-at="2024-06-11T21:34:05 EDT" name="logInWithIncorrectUsernameIncorrectPassword" finished-at="2024-06-11T21:34:08 EDT" duration-ms="3384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logInWithIncorrectUsernameIncorrectPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.myAccountLoginTestCases@7205765b]" started-at="2024-06-10T21:45:11 EDT" name="tearDown" finished-at="2024-06-10T21:45:11 EDT" duration-ms="236" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.myAccountLoginTestCases@66d3eec0]" started-at="2024-06-11T21:34:08 EDT" name="tearDown" finished-at="2024-06-11T21:34:08 EDT" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- FiftyOneTestCases.myAccountLoginTestCases -->
       <class name="FiftyOneTestCases.myAccountTestCases">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.myAccountTestCases@20ccf40b]" started-at="2024-06-10T21:44:11 EDT" name="getDriver" finished-at="2024-06-10T21:44:16 EDT" duration-ms="5790" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.myAccountTestCases@7e7be63f]" started-at="2024-06-11T21:33:07 EDT" name="getDriver" finished-at="2024-06-11T21:33:13 EDT" duration-ms="6114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="MyAccountsDashboard()[pri:0, instance:FiftyOneTestCases.myAccountTestCases@20ccf40b]" started-at="2024-06-10T21:44:16 EDT" name="MyAccountsDashboard" finished-at="2024-06-10T21:44:21 EDT" duration-ms="4448" status="PASS">
+        <test-method signature="MyAccountsDashboard()[pri:0, instance:FiftyOneTestCases.myAccountTestCases@7e7be63f]" started-at="2024-06-11T21:33:13 EDT" name="MyAccountsDashboard" finished-at="2024-06-11T21:33:18 EDT" duration-ms="4625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MyAccountsDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.myAccountTestCases@20ccf40b]" started-at="2024-06-10T21:44:21 EDT" name="tearDown" finished-at="2024-06-10T21:44:21 EDT" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.myAccountTestCases@7e7be63f]" started-at="2024-06-11T21:33:18 EDT" name="tearDown" finished-at="2024-06-11T21:33:18 EDT" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- FiftyOneTestCases.myAccountTestCases -->
       <class name="FiftyOneTestCases.shopTestCases">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.shopTestCases@2df9b86]" started-at="2024-06-10T21:43:56 EDT" name="getDriver" finished-at="2024-06-10T21:44:04 EDT" duration-ms="7987" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.shopTestCases@2053d869]" started-at="2024-06-11T21:32:49 EDT" name="getDriver" finished-at="2024-06-11T21:32:58 EDT" duration-ms="8981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="ShopFilterByPriceFunctionality()[pri:0, instance:FiftyOneTestCases.shopTestCases@2df9b86]" started-at="2024-06-10T21:44:04 EDT" name="ShopFilterByPriceFunctionality" finished-at="2024-06-10T21:44:04 EDT" duration-ms="18" status="PASS">
+        <test-method signature="ShopFilterByPriceFunctionality()[pri:0, instance:FiftyOneTestCases.shopTestCases@2053d869]" started-at="2024-06-11T21:32:58 EDT" name="ShopFilterByPriceFunctionality" finished-at="2024-06-11T21:32:59 EDT" duration-ms="901" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShopFilterByPriceFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.shopTestCases@2df9b86]" started-at="2024-06-10T21:44:04 EDT" name="tearDown" finished-at="2024-06-10T21:44:04 EDT" duration-ms="267" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.shopTestCases@2053d869]" started-at="2024-06-11T21:32:59 EDT" name="tearDown" finished-at="2024-06-11T21:32:59 EDT" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- FiftyOneTestCases.shopTestCases -->
       <class name="FiftyOneTestCases.homePageTestCases">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.homePageTestCases@2fb3536e]" started-at="2024-06-10T21:44:21 EDT" name="getDriver" finished-at="2024-06-10T21:44:27 EDT" duration-ms="6268" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.homePageTestCases@6cd28fa7]" started-at="2024-06-11T21:33:18 EDT" name="getDriver" finished-at="2024-06-11T21:33:25 EDT" duration-ms="6866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="homePageImagesInArrivalsShouldNavigate()[pri:0, instance:FiftyOneTestCases.homePageTestCases@2fb3536e]" started-at="2024-06-10T21:44:27 EDT" name="homePageImagesInArrivalsShouldNavigate" finished-at="2024-06-10T21:44:33 EDT" duration-ms="5965" status="PASS">
+        <test-method signature="homePageImagesInArrivalsShouldNavigate()[pri:0, instance:FiftyOneTestCases.homePageTestCases@6cd28fa7]" started-at="2024-06-11T21:33:25 EDT" name="homePageImagesInArrivalsShouldNavigate" finished-at="2024-06-11T21:33:31 EDT" duration-ms="6205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageImagesInArrivalsShouldNavigate -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.homePageTestCases@2fb3536e]" started-at="2024-06-10T21:44:33 EDT" name="tearDown" finished-at="2024-06-10T21:44:34 EDT" duration-ms="239" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.homePageTestCases@6cd28fa7]" started-at="2024-06-11T21:33:31 EDT" name="tearDown" finished-at="2024-06-11T21:33:31 EDT" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.homePageTestCases@2fb3536e]" started-at="2024-06-10T21:44:34 EDT" name="getDriver" finished-at="2024-06-10T21:44:40 EDT" duration-ms="5951" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.homePageTestCases@6cd28fa7]" started-at="2024-06-11T21:33:31 EDT" name="getDriver" finished-at="2024-06-11T21:33:37 EDT" duration-ms="5871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="homePageWithThreeArrivalsOnly()[pri:0, instance:FiftyOneTestCases.homePageTestCases@2fb3536e]" started-at="2024-06-10T21:44:40 EDT" name="homePageWithThreeArrivalsOnly" finished-at="2024-06-10T21:44:43 EDT" duration-ms="2904" status="PASS">
+        <test-method signature="homePageWithThreeArrivalsOnly()[pri:0, instance:FiftyOneTestCases.homePageTestCases@6cd28fa7]" started-at="2024-06-11T21:33:37 EDT" name="homePageWithThreeArrivalsOnly" finished-at="2024-06-11T21:33:40 EDT" duration-ms="2737" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageWithThreeArrivalsOnly -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.homePageTestCases@2fb3536e]" started-at="2024-06-10T21:44:43 EDT" name="tearDown" finished-at="2024-06-10T21:44:43 EDT" duration-ms="231" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.homePageTestCases@6cd28fa7]" started-at="2024-06-11T21:33:40 EDT" name="tearDown" finished-at="2024-06-11T21:33:40 EDT" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.homePageTestCases@2fb3536e]" started-at="2024-06-10T21:44:43 EDT" name="getDriver" finished-at="2024-06-10T21:44:49 EDT" duration-ms="6003" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:FiftyOneTestCases.homePageTestCases@6cd28fa7]" started-at="2024-06-11T21:33:40 EDT" name="getDriver" finished-at="2024-06-11T21:33:46 EDT" duration-ms="5527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="homePageWithThreeSlidersOnly()[pri:0, instance:FiftyOneTestCases.homePageTestCases@2fb3536e]" started-at="2024-06-10T21:44:49 EDT" name="homePageWithThreeSlidersOnly" finished-at="2024-06-10T21:44:52 EDT" duration-ms="2770" status="PASS">
+        <test-method signature="homePageWithThreeSlidersOnly()[pri:0, instance:FiftyOneTestCases.homePageTestCases@6cd28fa7]" started-at="2024-06-11T21:33:46 EDT" name="homePageWithThreeSlidersOnly" finished-at="2024-06-11T21:33:49 EDT" duration-ms="3082" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageWithThreeSlidersOnly -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.homePageTestCases@2fb3536e]" started-at="2024-06-10T21:44:52 EDT" name="tearDown" finished-at="2024-06-10T21:44:52 EDT" duration-ms="228" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FiftyOneTestCases.homePageTestCases@6cd28fa7]" started-at="2024-06-11T21:33:49 EDT" name="tearDown" finished-at="2024-06-11T21:33:49 EDT" duration-ms="243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
