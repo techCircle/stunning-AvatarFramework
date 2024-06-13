@@ -12,7 +12,9 @@ public class Constants {
 	
 	public static String sqlQueryPath = "";
 	
-	public static String excelPath = "";
+	public static String excelPath = "src/test/resources/excelFiles/WorldCup.xlsx";
+	
+	public static String excelPathToLoanNumbers = "";
 	
 	
 	

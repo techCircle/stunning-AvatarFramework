@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="FiftyOneTestCases.myAccountRegistrationTestCases">
+      <class name="TestCases.ExcelWrite">
         <methods>
-          <include name="getDriver"/>
-          <include name="RegistrationSignIn"/>
-          <include name="tearDown"/>
+          <include name="writingIntoExcel"/>
         </methods>
-      </class> <!-- FiftyOneTestCases.myAccountRegistrationTestCases -->
+      </class> <!-- TestCases.ExcelWrite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
