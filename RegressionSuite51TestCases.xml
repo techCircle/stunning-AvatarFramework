@@ -2,19 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
+
 	<listeners>
 		<listener class-name="Utilities.ListenersNG"></listener>
 	</listeners>
-	
+
 	<groups>
 		<run>
-			<include name= "smoke" />
-			<include name= "sliders" />
+			<include name="Regression" />
 		</run>
 	</groups>
-
+	
 	<test thread-count="5" name="Test">
-
 		<classes>
 			<class name="FiftyOneTestCases.shopTestCases" />
 			<class name="FiftyOneTestCases.myAccountRegistrationTestCases" />

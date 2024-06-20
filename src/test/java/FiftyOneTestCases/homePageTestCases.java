@@ -1,5 +1,7 @@
 package FiftyOneTestCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -11,21 +13,21 @@ import Utilities.commonMethods;
 @Listeners(ListenersNG.class)
 public class homePageTestCases extends commonMethods {
 
-	@Test
+	@Test(groups={"smoke", "Regression","sliders"})
 	public void homePageWithThreeSlidersOnly() {
 		hP.clickOnNavOption("Shop");
 		commonMethods.click(sP.homeButton);
 		AssertJUnit.assertTrue(hP.sliders.size() == 3);
 	}
 
-	@Test
+	@Test(groups={"smoke", "Regression", "sliders"})
 	public void homePageWithThreeArrivalsOnly() {
 		hP.clickOnNavOption("Shop");
 		commonMethods.click(sP.homeButton);
 		AssertJUnit.assertTrue(hP.arrivals.size() == 3);
 	}
 
-	@Test
+	@Test(groups={"Regression", "sliders", "sprint20"})
 	public void homePageImagesInArrivalsShouldNavigate() {
 		
 		hP.clickOnNavOption("Shop");

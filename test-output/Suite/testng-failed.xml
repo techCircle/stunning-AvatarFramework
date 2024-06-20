@@ -5,6 +5,11 @@
     <listener class-name="Utilities.ListenersNG"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
     <classes>
       <class name="FiftyOneTestCases.myAccountRegistrationTestCases">
         <methods>
@@ -13,6 +18,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- FiftyOneTestCases.myAccountRegistrationTestCases -->
+      <class name="FiftyOneTestCases.myAccountLoginTestCases">
+        <methods>
+          <include name="LogInWithWalidUsernameAndPassword"/>
+          <include name="getDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- FiftyOneTestCases.myAccountLoginTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

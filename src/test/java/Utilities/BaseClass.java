@@ -20,7 +20,7 @@ import pages.LoginPage;
 
 public class BaseClass {
 
-	public static WebDriver driver; // declaring webdriver at class level
+	public static WebDriver driver; // declaring webdriver at class level, initially its value is NULL
 	public static LoginPage lp; 
 	
 	//singleton

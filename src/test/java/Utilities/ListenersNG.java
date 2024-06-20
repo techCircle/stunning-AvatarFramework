@@ -17,6 +17,7 @@ public class ListenersNG implements ITestListener {
 	        String currentUrl = BaseClass.getDriver().getCurrentUrl();
 
 	  	}
+	
 
 	@Override
 	public void onTestSuccess(ITestResult result) {

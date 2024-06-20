@@ -1,5 +1,7 @@
 package FiftyOneTestCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -13,10 +15,10 @@ import Utilities.commonMethods;
 public class myAccountRegistrationTestCases extends commonMethods{
 	
 	
-	@Test
+	@Test(groups={"smoke", "Regression"})
 	public void RegistrationSignIn() {
 		System.out.println("Testing one method from account registration");
-		Assert.assertTrue(false);
+		AssertJUnit.assertTrue(false);
 	}
 
 

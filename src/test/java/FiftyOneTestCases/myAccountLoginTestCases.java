@@ -1,5 +1,7 @@
 package FiftyOneTestCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
@@ -16,7 +18,7 @@ import Utilities.commonMethods;
 public class myAccountLoginTestCases extends commonMethods {
 
 	
-	@Test
+	@Test(groups={"smoke", "Regression"})
 	public void  LogInWithWalidUsernameAndPassword() {
 		hP.clickOnNavOption("My Account");
 		mAp.attemptToLoginIn(BaseClass.getProperty("automationUsername"), BaseClass.getProperty("automationPassword"));
@@ -24,7 +26,7 @@ public class myAccountLoginTestCases extends commonMethods {
 	}
 	
 	
-	@Test
+	@Test(groups ={"Regression"})
 	public void logInWithIncorrectUsernameIncorrectPassword() {
 		hP.clickOnNavOption("My Account");
 		mAp.attemptToLoginIn(BaseClass.getProperty("automationInvalidUsername"), BaseClass.getProperty("automationInvalidPassword"));

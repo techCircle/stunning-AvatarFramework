@@ -24,7 +24,7 @@ public class LoginPage {
 	
 	
 //	public static WebElement loginUserField = BaseClass.getDriver().findElement(By.name("username"));
-	
+
 	
 	public void LoginToApp() {
 		loginUserInputField.sendKeys(BaseClass.getProperty("userName"));

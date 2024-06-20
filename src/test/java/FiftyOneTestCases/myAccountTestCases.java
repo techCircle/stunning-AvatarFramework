@@ -8,13 +8,11 @@ import Utilities.BaseClass;
 import Utilities.ListenersNG;
 import Utilities.commonMethods;
 
-
 @Listeners(ListenersNG.class)
 public class myAccountTestCases extends commonMethods {
-	
-	
-	@Test
-	public void MyAccountsDashboard(){
+
+	@Test(groups = {"Regression" })
+	public void MyAccountsDashboard() {
 		hP.clickOnNavOption("My Account");
 		mAp.attemptToLoginIn(BaseClass.getProperty("automationUsername"), BaseClass.getProperty("automationPassword"));
 		AssertJUnit.assertTrue(mAp.signOutButton.isDisplayed());

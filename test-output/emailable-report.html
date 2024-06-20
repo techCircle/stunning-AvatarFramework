@@ -8,11 +8,43 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3,861</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">74,602</td><td>Regression</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.ExcelWrite</td><td><a href="#m0">writingIntoExcel</a></td><td rowspan="1">1718243585030</td><td rowspan="1">3755</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">FiftyOneTestCases.myAccountLoginTestCases</td><td><a href="#m0">LogInWithWalidUsernameAndPassword</a></td><td rowspan="1">1718842261890</td><td rowspan="1">3004</td></tr><tr class="failedodd"><td rowspan="1">FiftyOneTestCases.myAccountRegistrationTestCases</td><td><a href="#m1">RegistrationSignIn</a></td><td rowspan="1">1718842215788</td><td rowspan="1">23</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">FiftyOneTestCases.homePageTestCases</td><td><a href="#m2">homePageImagesInArrivalsShouldNavigate</a></td><td rowspan="1">1718842232899</td><td rowspan="1">6327</td></tr><tr class="passedeven"><td><a href="#m3">homePageWithThreeArrivalsOnly</a></td><td rowspan="1">1718842244770</td><td rowspan="1">2946</td></tr><tr class="passedeven"><td><a href="#m4">homePageWithThreeSlidersOnly</a></td><td rowspan="1">1718842253009</td><td rowspan="1">3444</td></tr><tr class="passedodd"><td rowspan="1">FiftyOneTestCases.myAccountLoginTestCases</td><td><a href="#m5">logInWithIncorrectUsernameIncorrectPassword</a></td><td rowspan="1">1718842270876</td><td rowspan="1">3046</td></tr><tr class="passedeven"><td rowspan="1">FiftyOneTestCases.myAccountTestCases</td><td><a href="#m6">MyAccountsDashboard</a></td><td rowspan="1">1718842222835</td><td rowspan="1">4067</td></tr><tr class="passedodd"><td rowspan="1">FiftyOneTestCases.shopTestCases</td><td><a href="#m7">ShopFilterByPriceFunctionality</a></td><td rowspan="1">1718842207748</td><td rowspan="1">515</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">TestCases.ExcelWrite#writingIntoExcel</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">FiftyOneTestCases.myAccountLoginTestCases#LogInWithWalidUsernameAndPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchFrameException: Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [8BF90468-F43E-436E-A49C-AA08C048031F, findElement {using=xpath, value=//a[text()=&apos;Sign out&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 17.5, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 23F79, safari:platformVersion: 14.5, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 8BF90468-F43E-436E-A49C-AA08C048031F
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
+	at FiftyOneTestCases.myAccountLoginTestCases.LogInWithWalidUsernameAndPassword(myAccountLoginTestCases.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">FiftyOneTestCases.myAccountRegistrationTestCases#RegistrationSignIn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 
+	at FiftyOneTestCases.myAccountRegistrationTestCases.RegistrationSignIn(myAccountRegistrationTestCases.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">FiftyOneTestCases.homePageTestCases#homePageImagesInArrivalsShouldNavigate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">FiftyOneTestCases.homePageTestCases#homePageWithThreeArrivalsOnly</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">FiftyOneTestCases.homePageTestCases#homePageWithThreeSlidersOnly</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">FiftyOneTestCases.myAccountLoginTestCases#logInWithIncorrectUsernameIncorrectPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">FiftyOneTestCases.myAccountTestCases#MyAccountsDashboard</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">FiftyOneTestCases.shopTestCases#ShopFilterByPriceFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

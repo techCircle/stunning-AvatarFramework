@@ -9,15 +9,13 @@ import pages.PIMPage;
 
 public class PageInitializer extends BaseClass {
 	
-	
-	public static PIMPage pimP ;
+	public static PIMPage pimP;
 	public static LoginPage lp;
 	public static homePage hP;
 	public static shopPage sP;
 	public static productPage pP;
 	public static myAccountPage mAp;
 
-	
 	public static void initialize() {
 		pimP = new PIMPage();
 		lp = new LoginPage();
@@ -27,14 +25,4 @@ public class PageInitializer extends BaseClass {
 		mAp = new myAccountPage();
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
