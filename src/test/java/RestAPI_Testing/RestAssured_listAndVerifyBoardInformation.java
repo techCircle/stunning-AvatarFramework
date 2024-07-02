@@ -17,8 +17,6 @@ public class RestAssured_listAndVerifyBoardInformation {
 		.body("id[0]", equalTo("667a18de4ffb6fda6a592e47"))
 		.body("name", hasItems("Ali Family","El-Khatib Family")); //if it fails to verify, it will break
 	
-		
-		
 	}
 
 }
